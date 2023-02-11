@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Caarvin</string>
+    <string name="lbl_post">Post</string>
+    <string name="lbl_name">Kishore Kumar G</string>
+    <string name="lbl_loc">Lalgudi,Tiruchirapalli.</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_search">Search</string>
+
+    <string name="lbl_horse">horse and other vehicle</string>
+
+    <string name="lbl_cycle">cycle</string>
+
+    <string name="lbl_auto">auto</string>
+
+    <string name="api_key">AIzaSyA4epCW__HCcWgX872Qk77gWS2EQ_gKeko</string>
+</resources>

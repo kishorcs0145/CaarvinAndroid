@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="@dimen/_2sdp"
+    android:layout_height="@dimen/_75sdp">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp">
+<ImageView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:src="@drawable/logo"
+    ></ImageView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_gravity="right|center"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_2sdp"
+
+    android:layout_height="@dimen/_75sdp">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:gravity="right|center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/btnPost"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:padding="@dimen/_5sdp"
+        android:gravity="center"
+        style="@style/post_button"
+        android:text="@string/lbl_post" />
+
+    <TextView
+        android:id="@+id/btnLogin"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_width="@dimen/_50sdp"
+        style="@style/login_button"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="@string/lbl_login" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_height="@dimen/_10sdp"></ImageView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_7sdp"
+                android:layout_toRightOf="@id/login_image"
+                android:layout_centerVertical="true"
+                android:text="@string/lbl_name"
+                android:textColor="@color/black"
+                android:id="@+id/lblUserName"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lblUserName"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                ></ImageView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right|center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="right|center"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                style="@style/nav_rel"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                android:layout_height="@dimen/_10sdp"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_7sdp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgLocation"
+                android:text="@string/lbl_loc"
+                android:layout_height="wrap_content"></TextView>
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:padding="@dimen/_2sdp"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rytImage"
+        android:layout_width="wrap_content"
+        android:background="@drawable/menu_dropdownbg"
+        android:clickable="true"
+        android:layout_height="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pressed_menu"
+            ></ImageView>
+
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/rytImage"
+        android:background="@drawable/button3bg"
+        android:gravity="left|center"
+        android:padding="@dimen/_2sdp"
+        android:hint="@string/lbl_search"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:textSize="@dimen/_7sdp" />
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/viewbg"
+        android:layout_height="@dimen/_2sdp"></View>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="@dimen/_16sdp"
+        android:visibility="gone"
+        android:id="@+id/edit_text"
+        android:hint="Enter Address"
+        android:drawablePadding="@dimen/_16sdp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"></EditText>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view1"
+        android:visibility="gone"
+        android:textColor="@color/design_default_color_primary"
+        android:fontFamily="monospace"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        android:id="@+id/text_view2"
+        android:textSize="@dimen/_24sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        ></TextView>
+
+
+
+
+    <FrameLayout
+
+        android:layout_weight="1"
+        android:id="@+id/frmRoot"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_height="@dimen/_40sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/logo"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_4sdp"
+                android:text="© 2023.Abocarz."
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:text="All rights reserved"
+                ></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <TextView
+            android:id="@+id/lblPrivacy"
+            android:layout_width="match_parent"
+            android:text="Privacy Policy"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="@dimen/_7sdp"
+            android:gravity="center"
+            android:textColor="@drawable/privacy_policy_color_selector"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="How It Works"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Contact Us"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
