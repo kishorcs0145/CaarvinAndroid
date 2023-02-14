@@ -16,6 +16,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView btnLogin;
 
     private TextView lblPrivacy;
+
+    private TextView lblUserName;
 
     Resources res;
     Activity thisActivity;
@@ -99,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
         textView1 = (TextView) findViewById(R.id.text_view1);
 
         textView2 = (TextView) findViewById(R.id.text_view2);
+
+        lblUserName = (TextView)  findViewById(R.id.lblUserName);
+        lblUserName.setMovementMethod(new ScrollingMovementMethod());
 
         if (savedInstanceState == null) {
             FragmentManager manager1 = getSupportFragmentManager();

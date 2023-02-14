@@ -18,7 +18,7 @@
     android:layout_margin="@dimen/_2sdp"
     android:layout_height="@dimen/_75sdp">
     <LinearLayout
-        android:layout_weight="1.2"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp">
 <ImageView
@@ -41,9 +41,9 @@ android:src="@drawable/logo"
     <LinearLayout
         android:layout_weight="1"
         android:layout_gravity="right"
-        android:gravity="left|center"
+        android:gravity="right|center"
         android:layout_marginTop="@dimen/_5sdp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent">
     <TextView
         android:id="@+id/btnPost"
@@ -79,7 +79,7 @@ android:src="@drawable/logo"
                 android:layout_height="@dimen/_10sdp"></ImageView>
             <TextView
 
-                android:layout_width="@dimen/_80sdp"
+                android:layout_width="wrap_content"
                 android:textSize="@dimen/_7sdp"
                 android:layout_toRightOf="@id/login_image"
                 android:layout_centerVertical="true"

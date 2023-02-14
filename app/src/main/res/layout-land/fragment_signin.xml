@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:layout_margin="@dimen/_10sdp"
     tools:context=".MainActivity">
 
@@ -15,7 +16,15 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"></ExpandableListView>
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -175,7 +184,7 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
+    </LinearLayout>
+</ScrollView>
 
 </LinearLayout>
