@@ -10,7 +10,34 @@
 
     <string name="lbl_cycle">cycle</string>
 
+    <string name="lbl_earth">earth movers</string>
+
+    <string name="lbl_trac">tractors</string>
+
+    <string name="lbl_car">cars</string>
+
+    <string name="lbl_bike">bike</string>
+
+    <string name="lbl_drive">driver</string>
+
+    <string name="lbl_fishing">fishing boat</string>
+
+    <string name="lbl_comm">commercial vehicle dealer and agent</string>
+
+    <string name="lbl_heavy">heavy goods vehicle</string>
+
     <string name="lbl_auto">auto</string>
 
+    <string name="lbl_driver">driver</string>
+
+    <string name="lbl_journey">journey boat</string>
+
+    <string name="lbl_accessories">auto accessories shop</string>
+
+    <string name="lbl_van">van &amp; bus</string>
+
     <string name="api_key">AIzaSyA4epCW__HCcWgX872Qk77gWS2EQ_gKeko</string>
+
+    <string name="hyperlink_google_play"><a href="https://policies.google.com/privacy">Google Play Services</a></string>
+
 </resources>

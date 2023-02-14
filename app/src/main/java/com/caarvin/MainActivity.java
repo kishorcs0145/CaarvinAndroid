@@ -4,54 +4,38 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.Base64;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.caarvin.Adapters.AutoCompleteAdapter;
 import com.caarvin.Fragments.Homefragment;
 import com.caarvin.Fragments.Privacyfragment;
 import com.caarvin.Fragments.SigninFragment;
 import com.google.android.gms.common.api.Status;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
-import com.google.android.libraries.places.api.model.AutocompletePrediction;
 import com.google.android.libraries.places.api.model.Place;
-import com.google.android.libraries.places.api.net.FetchPlaceRequest;
-import com.google.android.libraries.places.api.net.FetchPlaceResponse;
-import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.android.libraries.places.widget.Autocomplete;
 import com.google.android.libraries.places.widget.AutocompleteActivity;
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.net.ssl.SSLEngineResult;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -126,6 +110,15 @@ public class MainActivity extends AppCompatActivity {
             transaction1.commit();
         }
 
+        final Handler handler2 = new Handler();
+        handler2.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Write whatever to want to do after delay specified (1 sec)
+                Log.d("fragmentInstance","init"+String.valueOf(getSupportFragmentManager().findFragmentById(R.id.frmRoot)));
+            }
+        }, 100);
+
         btnLogin.setOnClickListener(new onClick());
         lblPrivacy.setOnClickListener(new onClick());
 
@@ -157,7 +150,25 @@ startForResult.launch(intent);
 
     @Override
     public void onBackPressed() {
-        thisActivity.finish();
+        //thisActivity.finish();
+
+      /*  AlertDialog.Builder builder = new AlertDialog.Builder(thisActivity);
+        builder.setMessage("do you want to exit??")
+                .setCancelable(true)
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                        thisActivity.finish();
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();*/
+
         super.onBackPressed();
     }
 
@@ -166,56 +177,67 @@ startForResult.launch(intent);
         public void onClick(View view) {
             switch (view.getId()) {
 
+
+
                 case R.id.btnLogin:
+
+
+
+
+                    FragmentManager manager2 = getSupportFragmentManager();
+                    FragmentTransaction transaction2 = manager2.beginTransaction();
+
+                    Homefragment frag2 = new Homefragment();
+                    transaction2.remove(frag2);
 
                     FragmentManager manager1 = getSupportFragmentManager();
                     FragmentTransaction transaction1 = manager1.beginTransaction();
                     transaction1.setCustomAnimations(R.anim.slide_in_left, 0);
                     SigninFragment frag1 = new SigninFragment();
 
-                    FragmentManager manager2 = getSupportFragmentManager();
-                    FragmentTransaction transaction2 = manager2.beginTransaction();
-
-                    Homefragment frag2 = new Homefragment();
-
-                    if(a==0) {
-
-
-                        frag1 = new SigninFragment();
-                        SigninFragment f1 = new SigninFragment();
-                        transaction2.remove(f1);
-                        transaction1.add(R.id.frmRoot, frag1, "SigninFragment");
-                        //transaction1.addToBackStack("SigninFragment");
+                    transaction1.replace(R.id.frmRoot, frag1, "SigninFragment");
                         transaction1.commit();
 
-                        a=1;
-
-                        Log.d("==>>","A value in if"+a);
-                    }else{
 
 
-                        frag2 = new Homefragment();
-                        Homefragment f2 = new Homefragment();
-                        transaction2.remove(f2);
-                        transaction2.setCustomAnimations(R.anim.slide_in_left, 0);
-                        transaction2.replace(R.id.frmRoot, frag2);
-                        transaction2.commit();
+                    final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            // Write whatever to want to do after delay specified (1 sec)
+                            Log.d("fragmentInstance","btnLogin"+String.valueOf(getSupportFragmentManager().findFragmentById(R.id.frmRoot)));
+                        }
+                    }, 100);
 
-                        a=0;
 
-                        Log.d("==>>","A value in else"+a);
-                    }
                     break;
 
                 case R.id.lblPrivacy:
 
+                    FragmentManager managerhome2 = getSupportFragmentManager();
+                    FragmentTransaction transactionhome2 = managerhome2.beginTransaction();
+                    Homefragment fraghome2 = new Homefragment();
+                    transactionhome2.remove(fraghome2);
                     FragmentManager manager3 = getSupportFragmentManager();
                     FragmentTransaction transaction3 = manager3.beginTransaction();
                     transaction3.setCustomAnimations(R.anim.slide_in_left, 0);
                     Privacyfragment frag3 = new Privacyfragment();
-                    transaction3.add(R.id.frmRoot, frag3, "Privacyfragment");
+                    transaction3.replace(R.id.frmRoot, frag3, "Privacyfragment");
                     //transaction1.addToBackStack("Privacyfragment");
                     transaction3.commit();
+
+
+                    final Handler handler2 = new Handler();
+                    handler2.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            // Write whatever to want to do after delay specified (1 sec)
+                            Log.d("fragmentInstance","btnPrivacy"+String.valueOf(getSupportFragmentManager().findFragmentById(R.id.frmRoot)));
+                        }
+                    }, 100);
+
+
+
 
                     break;
                 default:

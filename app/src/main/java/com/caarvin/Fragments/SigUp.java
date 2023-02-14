@@ -5,27 +5,33 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.caarvin.R;
 
-public class Homefragment  extends MyApplicationFragment{
+public class SigUp extends MyApplicationFragment {
 
     Uri uri = null;
     View v;
     //ProgressDialog loading;
     Activity thisActivity;
     Resources res;
+    String frgName="";
 
+    private FrameLayout frmRoot;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         thisActivity = getActivity();
         res = thisActivity.getResources();
-        v = inflater.inflate(R.layout.fragment_home, null, false);
+        v = inflater.inflate(R.layout.fragment_signup, null, false);
         init();
         return v;
 
@@ -33,7 +39,9 @@ public class Homefragment  extends MyApplicationFragment{
 
     private void init() {
 
-
+        Log.d("SignupFragment","init Called");
+        frgName="SignupFragment";
+        frmRoot=(FrameLayout) thisActivity.findViewById(R.id.frmRoot);
 
     }
 
@@ -50,7 +58,9 @@ public class Homefragment  extends MyApplicationFragment{
 
     @Override
     public void onDetach() {
+        Log.d("SignupFragment","onDetach Called");
         super.onDetach();
+
 
     }
 
@@ -58,13 +68,14 @@ public class Homefragment  extends MyApplicationFragment{
     public void onResume() {
         // TODO Auto-generated method stub
 
-
         super.onResume();
     }
 
     @Override
     public void onDestroy() {
+        Log.d("SignupFragment","OnDestroy Called");
         super.onDestroy();
+
     }
 
     private void doBackPress() {
@@ -72,4 +83,5 @@ public class Homefragment  extends MyApplicationFragment{
 
         getFragmentManager().popBackStackImmediate();
     }
+
 }

@@ -5,10 +5,10 @@
     <stroke
         android:width="@dimen/_1sdp"></stroke>
 
-    <corners android:topLeftRadius="@dimen/_3sdp"
-        android:bottomLeftRadius="@dimen/_3sdp"
-        android:bottomRightRadius="@dimen/_3sdp"
-        android:topRightRadius="@dimen/_3sdp"
+    <corners android:topLeftRadius="@dimen/_1sdp"
+        android:bottomLeftRadius="@dimen/_1sdp"
+        android:bottomRightRadius="@dimen/_1sdp"
+        android:topRightRadius="@dimen/_1sdp"
 
         ></corners>
 

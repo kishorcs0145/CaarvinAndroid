@@ -12,23 +12,32 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
-
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/home_mainbg"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
                 <LinearLayout
-                    android:layout_weight="1"
+
                     android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_margin="@dimen/_3sdp"
+                    android:background="@drawable/home_imagebg"
                     android:gravity="center"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
                         android:src="@drawable/icons8_horseback_riding_96"
                         ></ImageView>
 
@@ -42,17 +51,26 @@
                         android:textStyle="bold"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
+            </LinearLayout>
 
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_margin="@dimen/_3sdp"
+                    android:background="@drawable/home_imagebg"
                     android:gravity="center"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
                         android:src="@drawable/icons8_bicycle_64"
                         ></ImageView>
 
@@ -60,15 +78,14 @@
                         android:layout_width="match_parent"
                         android:text="@string/lbl_cycle"
                         android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
+                        android:gravity="center"
                         android:textColor="@color/black"
                         android:background="@drawable/home_textview"
-                        android:gravity="center"
+                        android:textStyle="bold"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
 
-
-
+            </LinearLayout>
 
 
             </LinearLayout>
@@ -76,408 +93,453 @@
 
 
             <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_height="wrap_content">
-
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
+                    <LinearLayout
 
-                    <TextView
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_auto"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_auto"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
+                    <LinearLayout
+                        android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_driver"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_driver"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_height="wrap_content">
-
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
+                    <LinearLayout
 
-                    <TextView
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_sailing"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_journey"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="@dimen/_3sdp"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
+                    <LinearLayout
+                        android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_small_business_48"
+                            ></ImageView>
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_accessories"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_height="wrap_content">
-
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
+                    <LinearLayout
 
-                    <TextView
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_bus_64"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_van"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="@dimen/_3sdp"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
+                    <LinearLayout
+                        android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_container_truck_96"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_heavy"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
                 </LinearLayout>
-
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
-                        android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_height="wrap_content">
-
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
+                    <LinearLayout
 
-                    <TextView
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_digger_96"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_earth"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="@dimen/_3sdp"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
+                    <LinearLayout
+                        android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_tractor_64"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_trac"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
                 </LinearLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
-                        android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-
 
 
             </LinearLayout>
 
 
             <LinearLayout
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_height="wrap_content">
-
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:gravity="center"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_horseback_riding_96"
-                        ></ImageView>
+                    <LinearLayout
 
-                    <TextView
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_horse"
-                        android:textSize="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_sailing_ship_96"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_fishing"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
                     android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_margin="@dimen/_3sdp"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/icons8_bicycle_64"
-                        ></ImageView>
-
-                    <TextView
+                    <LinearLayout
+                        android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:text="@string/lbl_cycle"
-                        android:textSize="@dimen/_10sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="@drawable/home_textview"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
                         android:gravity="center"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_administrator_male_64"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_comm"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
                 </LinearLayout>
 
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_car"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_car"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/home_mainbg"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/home_imagebg"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icons8_motorcycle_128"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_bike"
+                            android:textSize="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:background="@drawable/home_textview"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
             </LinearLayout>
